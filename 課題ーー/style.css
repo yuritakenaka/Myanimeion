@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+.anim-box {
+  color: pink;
+  font-size: 500px;
+  text-align: center;
+  animation-name: poyoyon;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.anim-box.poyoyon.is-animated {
+  animation: poyoyon 0.5s cubic-bezier(0.12, 0, 0.39, 0) 1 forwards;
+  }
+  @keyframes poyoyon {
+  0% {
+  transform: translateX(140px);
+  opacity: 0;
+  }
+  50% {
+  transform: translateX(0);
+  }
+  65% {
+  transform: translateX(30px);
+  }
+  100% {
+  transform: translateX(0);
+  }
+  20%,100% {
+  opacity: 1;
+  }
+  }
